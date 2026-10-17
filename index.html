@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Organic Growth MCP: a personal desktop workflow for authorized Search Console and Google Analytics analysis.">
+  <title>Organic Growth MCP — App information</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <a class="brand" href="index.html">Organic Growth MCP</a>
+    <nav aria-label="Main navigation"><a href="index.html" aria-current="page">App information</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  </header>
+  <main id="main">
+    <h1>Your search data, in a deliberate workflow.</h1>
+    <p class="intro">Organic Growth MCP is a personal desktop setup maintained by Shivam Kumawat. It connects authorized Google Search Console and Google Analytics properties to an AI-assisted SEO research and reporting workflow.</p>
+    <p>This site explains the app and its data practices. It is not a hosted analytics dashboard, a public SaaS product or a Google sign-in portal. It does not receive OAuth callbacks or store Google credentials.</p>
+    <section aria-labelledby="uses">
+      <h2 id="uses">What the desktop app does</h2>
+      <ul>
+        <li>Lists Google properties the signed-in account is permitted to access.</li>
+        <li>Reads Search Console performance, sitemap and URL Inspection data when requested.</li>
+        <li>Reads Google Analytics account information and reports for authorized properties.</li>
+        <li>Supplies requested results to the operator’s AI assistant for SEO analysis, research and reporting.</li>
+        <li>Supports Search Console sitemap submission when the operator explicitly requests it.</li>
+      </ul>
+    </section>
+    <section aria-labelledby="permissions">
+      <h2 id="permissions">Google permissions</h2>
+      <table class="permissions">
+        <thead><tr><th scope="col">Service</th><th scope="col">Permission and purpose</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Search Console</th><td><code>webmasters</code><br>Reads verified-site search and indexing information; also permits sitemap submission. This connection is not read-only.</td></tr>
+          <tr><th scope="row">Google Analytics</th><td><code>analytics.readonly</code><br>Reads account/property information and requested reports. It does not permit Analytics configuration changes.</td></tr>
+        </tbody>
+      </table>
+      <p>Connecting an account does not give the app access to properties that account cannot already access. Publishing this information site does not expose any connected property’s private data.</p>
+    </section>
+    <section aria-labelledby="data">
+      <h2 id="data">Understand the data flow</h2>
+      <p>Google APIs → local MCP server → the configured AI assistant. Requested results can leave the computer when supplied to the assistant’s service provider, including OpenAI for the current Codex setup. This is not an entirely offline workflow.</p>
+      <p>Read the <a href="privacy.html">privacy notice</a> for local storage, AI processing, hosting logs and revocation. Read the <a href="terms.html">terms of use</a> before using the setup.</p>
+    </section>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Operator and contact</h2>
+      <p>Maintained by <a href="https://github.com/ohnoshivm">Shivam Kumawat</a>. For non-sensitive support, use <a href="https://github.com/ohnoshivm/ohnoshivm.github.io/issues">GitHub Issues</a>. Never post credentials, private property data or personal information in a public issue.</p>
+      <p class="meta">Independent setup using community Search Console tooling and Google’s Analytics MCP server. Not a Google product, endorsement or verification claim.</p>
+    </section>
+  </main>
+  <footer>Organic Growth MCP · <a href="privacy.html">Privacy notice</a> · <a href="terms.html">Terms of use</a></footer>
+</body>
+</html>
