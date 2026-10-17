@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Draft privacy notice for Organic Growth MCP, including Google API access, local credentials, AI processing and revocation.">
+  <title>Privacy notice — Organic Growth MCP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><a class="brand" href="index.html">Organic Growth MCP</a><nav aria-label="Main navigation"><a href="index.html">App information</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav></header>
+  <main class="document" id="main">
+    <h1>Privacy notice</h1>
+    <p class="meta">Effective 17 October 2026 · Operator: Shivam Kumawat</p>
+    <p>This notice describes the data practices for Organic Growth MCP, a personal desktop Google API workflow. The public information site and the local MCP integrations perform different roles.</p>
+    <h2>Data accessed and purpose</h2>
+    <p>With account authorization, the desktop workflow can access Search Console property identifiers, permissions, queries, pages, clicks, impressions, average position, sitemap information and URL Inspection results. It can also access Analytics account/property information, reporting metadata and requested report results, including traffic, events, conversions or revenue where available and requested.</p>
+    <p>The workflow uses those data for the operator’s requested SEO research, technical diagnostics, reporting and measurement. Access must be limited to properties and tasks the operator is authorized to handle. It does not request Gmail, Drive or payment-account permissions.</p>
+    <h2>Permissions and actions</h2>
+    <p>Search Console uses <code>https://www.googleapis.com/auth/webmasters</code>, which includes write access for sitemap submission as well as reading Search Console data. Sitemap submission requires an explicit operator request. Analytics uses <code>https://www.googleapis.com/auth/analytics.readonly</code>; the app does not change Analytics settings through this connection.</p>
+    <h2>Local storage and retention</h2>
+    <p>The desktop configuration stores OAuth client information and refresh tokens in local files restricted to the operating-system user. File permissions are not a promise of application-level encryption or hardware-backed secret storage. The operator is responsible for device security, backups and access controls.</p>
+    <p>Requested data can be retained in assistant conversations, local evidence registers, exports, reports or backups. There is no automatic deletion schedule configured for the current local workspace. Keep only data necessary for the authorized task, review retention regularly and remove unneeded local copies. Deleting a local export does not necessarily delete assistant-provider or backup copies.</p>
+    <h2>AI-assisted processing and service providers</h2>
+    <p>MCP results supplied to the configured AI assistant may be transmitted to and processed by its service provider. The current workflow uses Codex from OpenAI. The operator must use account settings and contractual terms compatible with the Google API data being processed, and obtain any necessary property-owner permission. Do not supply sensitive personal data, credentials or unnecessary user-level information to an assistant.</p>
+    <p>Google API data must not be used to develop, improve or train generalized AI or machine-learning models. Do not enable provider data sharing for that purpose. Provider retention and processing are governed by the actual account, settings and applicable terms; this notice does not promise zero retention, a particular training setting or a particular geographic processing location.</p>
+    <p>Other integrations must not receive Google data without an appropriate disclosed purpose and authorization. This notice does not authorize public sharing, unrelated outreach, sale of data or transfer to advertising platforms or data brokers.</p>
+    <h2>Google API Limited Use</h2>
+    <p>Organic Growth MCP’s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. This is an operator commitment, not a claim that Google has verified or endorsed this app.</p>
+    <h2>The public information website</h2>
+    <p>These static pages contain no app-added analytics, advertising, external fonts, tracking scripts, sign-in forms or OAuth callback handler. No Google credentials or private reporting data are included in the published files.</p>
+    <p>GitHub Pages hosts this site. GitHub may process visitor information, including IP addresses, for hosting and security under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. The site is therefore not described as collecting no data at all.</p>
+    <h2>Revoke access or request removal</h2>
+    <p>You can review or revoke this app’s access from <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation stops future API access through the affected authorization; it does not erase previously retrieved reports or conversations.</p>
+    <p>The operator can remove local credentials and data, and use the configured assistant provider’s controls for retained conversations. For non-sensitive questions, use the <a href="https://github.com/ohnoshivm/ohnoshivm.github.io/issues">public issue tracker</a>. For private requests, use the support email displayed on the app’s Google consent screen. Do not put private data or tokens in an issue.</p>
+    <h2>Changes</h2>
+    <p>Update this notice before introducing a materially different purpose, provider, permission or data flow. Obtain renewed consent where required. The effective date above identifies the current notice.</p>
+  </main>
+  <footer>Organic Growth MCP · <a href="index.html">App information</a> · <a href="terms.html">Terms of use</a></footer>
+</body>
+</html>
